@@ -1,0 +1,88 @@
+/* General container with dark theme */
+.question-list-container {
+  background-color: #121212;
+  color: #f0f0f0;
+   /* padding top to accommodate fixed header */
+  width:100%;
+}
+
+/* Fixed header */
+.question-list-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #ced4d2;
+  font-size: 32px;
+  text-align: left;
+  padding: 5px 20px;
+  border-bottom: 2px solid #00ff88;
+  z-index: 1000;
+}
+
+/* Align the list to the left */
+.question-list {
+  padding-top: 900px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+}
+
+/* Each question item styled as a box */
+.question-item {
+  background-color: #1a1a1a;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0px #00ff88;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect: green glow and zoom-in */
+.question-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #00ff88;
+}
+
+/* Question title: large */
+.question-title {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #61dafb;
+}
+
+/* Difficulty: smaller */
+.question-difficulty {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+/* Question link: no underline and styled color */
+.question-link {
+  text-decoration: none;
+}
+
+.question-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.generate-button {
+  background-color: #4caf50;
+  color: white;
+  padding-right:50px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.generate-button:hover {
+  background-color: #45a049;
+}
