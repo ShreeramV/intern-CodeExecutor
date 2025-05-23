@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -141,3 +142,43 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,  # Allows Django's default logs to still work
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} [{levelname}] {name}: {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '[{levelname}] {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {  # Logs to terminal
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {  # Logs to file
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs', 'django_ai_generation.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {  # Django internal logs
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+        },
+        'executor': {  # Your custom app logs
+            'handlers': ['console', 'file'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}

@@ -24,8 +24,10 @@ class Question(models.Model):
     description = models.TextField()
     sample_input = models.TextField()
     sample_output = models.TextField()
-    explanation = models.TextField(blank=True, null=True)  # ✅ Added this line
-    max_score = models.IntegerField(default=10)
+
+    explanation = models.TextField(blank=True, null=True)
+    constraints = models.TextField(blank=True, null=True)  # ✅ NEW
+    testcase_description = models.TextField(blank=True, null=True)
     
     difficulty = models.CharField(max_length=10, choices=DIFFICULTY_CHOICES, default='easy')
     topics = models.ManyToManyField(Topic, blank=True)

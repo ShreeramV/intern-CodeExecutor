@@ -3,21 +3,37 @@ import uuid
 import subprocess
 import json
 import logging
+import random
+import time
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import status
 from .models import Question, Topic, Company, TestCase
 from .serializers import QuestionSerializer, GenerateQuestionInputSerializer
 from .question_generator import generate_question_with_test_cases  # if used elsewhere
 import google.generativeai as genai
 from .models import Topic  
 from decouple import config
+import cohere
+from dotenv import load_dotenv
+from .pydantic_models import GeneratedQuestionOut, GeneratedQuestionList
+from pydantic import TypeAdapter
 
+
+load_dotenv()
 logger = logging.getLogger(__name__)
 GEMINI_API_KEY = config("GEMINI_API_KEY") 
 
 genai.configure(api_key=GEMINI_API_KEY)
+
+cohere_api_key = os.getenv('COHERE_API_KEY')
+if not cohere_api_key:
+    raise ValueError("COHERE_API_KEY not found in environment variables. Make sure it's set in your .env file.")
+
+# Initialize Cohere client
+cohere_client = cohere.Client(cohere_api_key)
 
 LANGUAGES = {
     'python': '.py',
@@ -26,22 +42,24 @@ LANGUAGES = {
     'java': '.java',
 }
 
-
 @api_view(['POST'])
 def run_code(request):
     code = request.data.get('code')
     language = request.data.get('language')
 
-    print("🔹 Received code execution request.")
-    print(f"🔸 Language: {language}")
-    print(f"🔸 Code preview:\n{code[:100]}..." if code else "❌ No code provided")
+    logger.info("Code execution request received.")
+    logger.info(f"Language: {language}")
+    if code:
+        logger.debug(f"Code preview:\n{code[:100]}...")
+    else:
+        logger.error("No code provided.")
 
     if not code or not language:
-        print("❌ Code or language missing.")
+        logger.error("Code or language missing.")
         return Response({'error': 'Code and language are required.'}, status=400)
 
     if language not in LANGUAGES:
-        print(f"❌ Unsupported language: {language}")
+        logger.error(f"Unsupported language: {language}")
         return Response({'error': 'Unsupported language'}, status=400)
 
     ext = LANGUAGES[language]
@@ -52,11 +70,8 @@ def run_code(request):
     filepath = os.path.join(folder, filename)
     output_exe = None
 
-
-
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(code)
-
 
     try:
         if language == 'python':
@@ -65,33 +80,33 @@ def run_code(request):
         elif language == 'c':
             output_exe = os.path.join(folder, f'{uuid.uuid4().hex}')
             compile_cmd = ['gcc', filepath, '-o', output_exe]
-            print(f"🔧 Compiling C code: {' '.join(compile_cmd)}")
+            logger.info(f"Compiling C code: {' '.join(compile_cmd)}")
             subprocess.run(compile_cmd, check=True, stderr=subprocess.PIPE)
             cmd = [output_exe]
 
         elif language == 'cpp':
             output_exe = os.path.join(folder, f'{uuid.uuid4().hex}')
             compile_cmd = ['g++', filepath, '-o', output_exe]
-            print(f"🔧 Compiling C++ code: {' '.join(compile_cmd)}")
+            logger.info(f"Compiling C++ code: {' '.join(compile_cmd)}")
             subprocess.run(compile_cmd, check=True, stderr=subprocess.PIPE)
             cmd = [output_exe]
 
         elif language == 'java':
             java_folder = os.path.abspath(folder)
             compile_cmd = ['javac', filepath]
-            print(f"🔧 Compiling Java code: {' '.join(compile_cmd)}")
+            logger.info(f"Compiling Java code: {' '.join(compile_cmd)}")
             subprocess.run(compile_cmd, cwd=java_folder, check=True, stderr=subprocess.PIPE)
             class_name = os.path.splitext(os.path.basename(filepath))[0]
             cmd = ['java', '-cp', java_folder, class_name]
 
-        print(f"▶️ Running command: {' '.join(cmd)}")
+        logger.info(f"Running command: {' '.join(cmd)}")
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=5, check=True)
 
-        print("✅ Execution successful.")
+        logger.info("Execution successful.")
         if result.stdout:
-            print("📤 Output:\n", result.stdout)
+            logger.debug(f"Execution output:\n{result.stdout}")
         if result.stderr:
-            print("⚠️  Errors:\n", result.stderr)
+            logger.warning(f"Execution warnings/errors:\n{result.stderr}")
 
         return Response({
             'stdout': result.stdout,
@@ -100,15 +115,15 @@ def run_code(request):
 
     except subprocess.CalledProcessError as e:
         stderr = e.stderr.decode() if isinstance(e.stderr, bytes) else str(e)
-        print("❌ Execution failed with error:", stderr)
+        logger.error("Code execution failed", exc_info=True)
         return Response({'stdout': '', 'stderr': stderr}, status=400)
 
     except subprocess.TimeoutExpired:
-        print("⏰ Execution timed out.")
+        logger.error("Execution timed out.")
         return Response({'stdout': '', 'stderr': 'Execution timed out'}, status=408)
 
     finally:
-        print("🧹 Cleaning up temporary files...")
+        logger.info("Cleaning up temporary files...")
         try:
             if os.path.exists(filepath):
                 os.remove(filepath)
@@ -120,7 +135,7 @@ def run_code(request):
                 if os.path.exists(class_file):
                     os.remove(class_file)
         except Exception as cleanup_error:
-            logging.warning(f"⚠️ Cleanup failed: {cleanup_error}")
+            logger.warning(f"Cleanup failed: {cleanup_error}")
 
 class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
@@ -135,6 +150,59 @@ class QuestionViewSet(viewsets.ModelViewSet):
 
 
     
+
+
+def generate_with_model(model, prompt, retries=3):
+    for attempt in range(1, retries + 1):
+        try:
+            logger.debug(f"Attempt {attempt}: Sending prompt to {model.__class__.__name__}.")
+            response = model.generate_content(prompt)
+            content = response.text.strip()
+            logger.debug(f"Model response: {content[:200]}...")
+            return content
+        except Exception as e:
+            logger.warning(f"{model.__class__.__name__} failed on attempt {attempt}: {e}")
+            time.sleep(2 ** attempt + random.random())  # Exponential backoff
+    return None
+
+
+
+def generate_with_fallbacks(prompt):
+    # Primary: Gemini 1.5 Flash
+    content = generate_with_model(genai.GenerativeModel("gemini-1.5-flash"), prompt)
+    if content:
+        logger.info("✅ Response from Gemini 1.5 Flash")
+        return content
+
+    # Fallback 1: Gemini 1.5 Pro
+    logger.info("🔁 Falling back to Gemini 1.5 Pro...")
+    try:
+        content = generate_with_model(genai.GenerativeModel("gemini-1.5-pro"), prompt)
+        if content:
+            logger.info("✅ Response from Gemini 1.5 Pro")
+            return content
+    except Exception as e:
+        logger.warning(f"⚠️ Gemini 1.5 Pro fallback failed: {e}")
+
+    # Fallback 2: Cohere
+    logger.info("🔁 Falling back to Cohere...")
+    try:
+        co = cohere.Client("COHERE_API_KEY")
+        response = co.generate(
+            model="command",
+            prompt=prompt,
+            max_tokens=1000,
+            temperature=0.7,
+        )
+        content = response.generations[0].text.strip()
+        logger.info("✅ Response from Cohere")
+        return content
+    except Exception as e:
+        logger.error(f"❌ Cohere fallback failed: {e}")
+
+    return None
+
+
 @api_view(['POST'])
 def generate_questions(request):
     logger.info("🔹 Received POST request to generate questions.")
@@ -149,56 +217,100 @@ def generate_questions(request):
     logger.info(f"🔹 Topic: {topic_name}, Difficulty: {difficulty}")
 
     prompt = (
-        f"Generate 5 coding questions on the topic '{topic_name}' with difficulty '{difficulty}'. "
-        f"Each question should have:\n"
-        f"- A title\n"
-        f"- A detailed description\n"
-        f"- A list of companies that have asked this question (key: 'companies_asked')\n"
-        f"- The year this question was asked (key: 'year_asked')\n"
-        f"- 2-3 test cases with input and output in JSON format\n"
-        f"Respond only with a valid JSON array like:\n"
-        f"{{'title': ..., 'description': ..., 'companies_asked': [...], 'year_asked': ..., 'test_cases': [{{'input': ..., 'output': ...}}]}}"
+    f"Generate 5 coding questions on the topic '{topic_name}' with difficulty '{difficulty}'.\n\n"
+    "Each question must be a JSON object with the following keys:\n"
+    '- "title": string\n'
+    '- "description": string\n'
+    '- "companies_asked": list of strings (company names)\n'
+    '- "year_asked": integer or null\n'
+    '- "explanation": string\n'
+    '- "constraints": string\n'
+    '- "sample_io": list of 3 objects, each with "input" and "output" keys as strings\n'
+    '- "test_cases": list of 2 or 3 objects, each with "input" and "output" keys\n\n'
+    "Return a JSON array containing exactly 5 such question objects.\n\n"
+    "**Important:**\n"
+    "- Respond ONLY with the JSON array.\n"
+    "- Do NOT include any markdown formatting, text, or comments.\n"
+    '- Ensure all property names and string values use double quotes.\n'
+    "- The JSON must be valid and parseable.\n\n"
+    "Example output:\n\n"
+    "[\n"
+    "  {\n"
+    '    "title": "Example Question Title",\n'
+    '    "description": "Detailed question description here...",\n'
+    '    "companies_asked": ["Google", "Facebook"],\n'
+    '    "year_asked": 2022,\n'
+    '    "explanation": "Explanation with examples...",\n'
+    '    "constraints": "Input constraints or time limits...",\n'
+    '    "sample_io": [\n'
+    '      {"input": "1 2", "output": "3"},\n'
+    '      {"input": "4 5", "output": "9"},\n'
+    '      {"input": "7 8", "output": "15"}\n'
+    '    ],\n'
+    '    "test_cases": [\n'
+    '      {"input": "1 2", "output": "3"},\n'
+    '      {"input": "4 5", "output": "9"}\n'
+    '    ]\n'
+    "  },\n"
+    "  ...\n"
+    "]"
     )
 
+
+
+
+    content = generate_with_fallbacks(prompt)
+
+
+    if not content:
+        logger.error("❌ Gemini failed after retries. No fallback configured.")
+        return Response({"error": "Gemini service is unavailable at the moment. Please try again later."}, status=503)
+
+    if content.startswith("```"):
+        content = content.strip("```json").strip("```")
+        logger.debug("🧹 Stripped markdown code block formatting.")
+
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(prompt)
-        content = response.text.strip()
+        questions_json = json.loads(content)
+        if not isinstance(questions_json, list):
+            raise ValueError("Expected a list of questions.")
+        logger.info(f"✅ Parsed {len(questions_json)} questions.")
+    except Exception as e:
+        logger.error("❌ Failed to parse JSON from Gemini: %s", str(e))
+        return Response({'error': 'Invalid response format from Gemini', 'details': str(e)}, status=500)
 
-        if not content:
-            return Response({"error": "No content generated by Gemini."}, status=500)
+    topic_obj, _ = Topic.objects.get_or_create(name=topic_name)
+    generated_questions = []
 
-        if content.startswith("```"):
-            content = content.strip("```json").strip("```")
+    for q in questions_json:
+        title = q.get('title')
+        description = q.get('description')
+        companies_list = q.get('companies_asked', [])
+        year_asked = q.get('year_asked')
+        test_cases = q.get('test_cases', [])
+        constraints = q.get('constraints', '')
+        testcase_description = q.get('testcase_description', '')
+        explanation = q.get('explanation', '')
+
+        if not title or not description:
+            logger.warning(f"⚠️ Skipping question due to missing title/description: {q}")
+            continue
+        sample_ios = q.get('sample_io', [])
+        sample_input = str(test_cases[0]['input']) if test_cases else ""
+        sample_output = str(test_cases[0]['output']) if test_cases else ""
 
         try:
-            questions_json = json.loads(content)
-        except json.JSONDecodeError as e:
-            logger.error("❌ Failed to parse JSON from Gemini: %s", str(e))
-            return Response({'error': 'Failed to parse JSON from Gemini', 'details': str(e)}, status=500)
-
-        topic_obj, _ = Topic.objects.get_or_create(name=topic_name)
-        generated_questions = []
-
-        for q in questions_json:
-            logger.info(f"🔹 Processing Question: {q['title']}")
-
-            companies_list = q.get('companies_asked', [])
-            year_asked = q.get('year_asked', None)
-            test_cases = q.get('test_cases', [])
-
-            sample_input = str(test_cases[0]['input']) if test_cases else ""
-            sample_output = str(test_cases[0]['output']) if test_cases else ""
-
             question = Question.objects.create(
-                title=q['title'],
-                description=q['description'],
-                sample_input=sample_input,
-                sample_output=sample_output,
-                explanation="",
-                difficulty=difficulty,
-                year_asked=year_asked if isinstance(year_asked, int) else None,
-            )
+            title=title,
+            description=description,
+            sample_input=sample_input,
+            sample_output=sample_output,
+            explanation=explanation,
+            constraints=constraints,
+            testcase_description=testcase_description,
+            difficulty=difficulty,
+            year_asked=year_asked if isinstance(year_asked, int) else None,
+        )
 
             question.topics.add(topic_obj)
 
@@ -209,8 +321,8 @@ def generate_questions(request):
             for tc in test_cases:
                 TestCase.objects.create(
                     question=question,
-                    input_data=tc['input'],
-                    expected_output=tc['output']
+                    input_data=tc.get('input'),
+                    expected_output=tc.get('output')
                 )
 
             generated_questions.append({
@@ -224,22 +336,88 @@ def generate_questions(request):
                 'difficulty': difficulty,
             })
 
-        return Response({'generated_questions': generated_questions}, status=201)
+            logger.debug(f"✅ Saved question: {question.title}")
 
+        except Exception as e:
+            logger.error(f"❌ Failed to save question '{title}': {str(e)}")
+
+    if not generated_questions:
+        logger.warning("⚠️ No questions were saved to the database.")
+        return Response({"error": "No valid questions generated."}, status=500)
+
+    logger.info(f"✅ Successfully generated and saved {len(generated_questions)} questions.")
+    response_model = GeneratedQuestionList(generated_questions=generated_questions)
+
+    try:
+        adapter = TypeAdapter(GeneratedQuestionList)
+        json_output = adapter.dump_json(response_model, indent=2).decode()
+
+        logger.debug("📦 Final response structured via Pydantic:\n%s", json_output)
+
+        return Response(response_model.model_dump(), status=201)  # Use model_dump() instead of dict()
     except Exception as e:
-        logger.error("❌ Exception occurred: %s", str(e))
-        return Response({"error": str(e)}, status=500)
+        logger.error("❌ Failed to serialize Pydantic output: %s", str(e))
+        return Response({"error": "Failed to serialize response"}, status=500)
 
-    
+
+
+def generate_grading_json(prompt):
+    def try_parse_json(content):
+        try:
+            if content.startswith("```"):
+                content = content.strip("```json").strip("```")
+            return json.loads(content)
+        except Exception as e:
+            logger.warning(f"⚠️ Failed to parse JSON: {e}")
+            return None
+
+    # Primary: Gemini 1.5 Flash
+    content = generate_with_model(genai.GenerativeModel("gemini-1.5-flash"), prompt)
+    grade_json = try_parse_json(content) if content else None
+    if grade_json:
+        logger.info("✅ Grading response from Gemini 1.5 Flash")
+        return grade_json
+
+    # Fallback 1: Gemini 1.5 Pro
+    logger.info("🔁 Falling back to Gemini 1.5 Pro...")
+    content = generate_with_model(genai.GenerativeModel("gemini-1.5-pro"), prompt)
+    grade_json = try_parse_json(content) if content else None
+    if grade_json:
+        logger.info("✅ Grading response from Gemini 1.5 Pro")
+        return grade_json
+
+    # Fallback 2: Cohere
+    logger.info("🔁 Falling back to Cohere...")
+    try:
+        co = cohere.Client("YOUR_COHERE_API_KEY")
+        response = co.generate(
+            model="command",
+            prompt=prompt,
+            max_tokens=1000,
+            temperature=0.7,
+        )
+        content = response.generations[0].text.strip()
+        grade_json = try_parse_json(content)
+        if grade_json:
+            logger.info("✅ Grading response from Cohere")
+            return grade_json
+    except Exception as e:
+        logger.error(f"❌ Cohere fallback failed: {e}")
+
+    return None
+
+
+
 @api_view(['POST'])
 def grade_code(request):
     logger.info("🔹 Received POST request to grade code.")
 
     # Validate input
     required_fields = ['code', 'question', 'sample_input', 'sample_output', 'user_output']
-    if not all(request.data.get(field) for field in required_fields):
-        logger.error("❌ Missing one or more required fields.")
-        return Response({"error": "All fields are required."}, status=400)
+    missing_fields = [field for field in required_fields if not request.data.get(field)]
+    if missing_fields:
+        logger.error(f"❌ Missing required fields: {', '.join(missing_fields)}")
+        return Response({"error": f"Missing required fields: {', '.join(missing_fields)}"}, status=status.HTTP_400_BAD_REQUEST)
 
     code = request.data['code']
     question = request.data['question']
@@ -247,9 +425,8 @@ def grade_code(request):
     sample_output = request.data['sample_output']
     user_output = request.data['user_output']
 
-    logger.info("🔹 Grading code for question.")
+    logger.info("🔹 Constructing prompt for grading.")
 
-    # Construct prompt
     prompt = f"""
 You are an AI code grader. Evaluate the following code submission based on the following **rubric (out of 10 marks)**:
 
@@ -292,30 +469,15 @@ Return a JSON object with this structure:
 {user_output}
 """
 
-    try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        response = model.generate_content(prompt)
-        content = response.text.strip()
+    logger.info("🔸 Sending prompt through fallback grading system.")
+    grade_json = generate_grading_json(prompt)
 
-        if not content:
-            logger.error("❌ Empty response from Gemini.")
-            return Response({"error": "No response from Gemini."}, status=500)
+    if not grade_json:
+        logger.error("❌ All grading fallbacks failed.")
+        return Response({"error": "All grading services failed. Please try again later."}, status=status.HTTP_503_SERVICE_UNAVAILABLE)
 
-        if content.startswith("```"):
-            content = content.strip("```json").strip("```")
-
-        try:
-            grade_json = json.loads(content)
-        except json.JSONDecodeError as e:
-            logger.error("❌ Failed to parse JSON from Gemini: %s", str(e))
-            return Response({'error': 'Failed to parse JSON from Gemini', 'raw': content}, status=500)
-
-        logger.info("✅ Grading completed successfully.")
-        return Response(grade_json, status=200)
-
-    except Exception as e:
-        logger.error("❌ Grade exception: %s", str(e))
-        return Response({"error": str(e)}, status=500)
+    logger.info("✅ Grading completed successfully.")
+    return Response(grade_json, status=status.HTTP_200_OK)
 
 
 
@@ -325,17 +487,24 @@ from rest_framework.response import Response
 from .models import Question
 from .serializers import QuestionSerializer
 
+
 class QuestionDetailView(APIView):
     def get(self, request, pk):
+        logger.info(f"Fetching question with ID: {pk}")
         try:
             question = Question.objects.get(pk=pk)
+            logger.info(f"Question found: {question.title}")
         except Question.DoesNotExist:
+            logger.warning(f"Question not found for ID: {pk}")
             return Response({"error": "Question not found"}, status=404)
         serializer = QuestionSerializer(question)
         return Response(serializer.data)
 
+
+
 class QuestionListView(APIView):
     def get(self, request):
         questions = Question.objects.all()
+        logger.info(f"Fetched all questions. Count: {questions.count()}")
         serializer = QuestionSerializer(questions, many=True)
         return Response(serializer.data)

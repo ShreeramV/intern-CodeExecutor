@@ -1,0 +1,1409 @@
+2025-05-19 23:49:46,520 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 00:59:40,930 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 00:59:43,126 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:00:04,475 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 44359
+2025-05-20 01:00:04,685 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 44359
+2025-05-20 01:00:10,329 [INFO] django.server: "GET /api/questions/47/ HTTP/1.1" 200 721
+2025-05-20 01:00:10,349 [INFO] django.server: "GET /api/questions/47/ HTTP/1.1" 200 721
+2025-05-20 01:00:18,962 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 44359
+2025-05-20 01:00:19,196 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 44359
+2025-05-20 01:00:39,890 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-20 01:00:50,274 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 1459
+2025-05-20 01:01:41,581 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:20:58,983 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:21:00,973 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:21:13,978 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:21:15,840 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:24:10,257 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:24:12,088 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:24:17,831 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:24:19,493 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:24:39,186 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:24:41,055 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:25:25,821 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:25:27,636 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:26:20,100 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:26:21,819 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:26:42,872 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:26:44,690 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:28:20,457 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:28:22,102 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:28:31,028 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:28:32,747 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 01:29:40,802 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 01:29:42,386 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 08:34:29,052 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 08:34:53,879 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 47867
+2025-05-20 08:34:54,303 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 47867
+2025-05-20 08:47:51,916 [INFO] django.server: "GET /api/questions/69/ HTTP/1.1" 200 658
+2025-05-20 08:47:51,938 [INFO] django.server: "GET /api/questions/69/ HTTP/1.1" 200 658
+2025-05-20 08:48:31,247 [INFO] django.server: "OPTIONS /api/run_code/ HTTP/1.1" 200 0
+2025-05-20 08:48:31,254 [INFO] executor.views: Code execution request received.
+2025-05-20 08:48:31,256 [INFO] executor.views: Language: python
+2025-05-20 08:48:31,256 [DEBUG] executor.views: Code preview:
+def findDuplicates(nums):
+    res = []
+    for num in nums:
+        index = abs(num) - 1
+        if ...
+2025-05-20 08:48:31,261 [INFO] executor.views: Running command: python temp_codes\code_935620f3d19c4283959cf7fd8a17f525.py
+2025-05-20 08:48:31,472 [INFO] executor.views: Execution successful.
+2025-05-20 08:48:31,473 [DEBUG] executor.views: Execution output:
+[2, 3]
+
+2025-05-20 08:48:31,474 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 08:48:31,476 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 33
+2025-05-20 08:48:33,486 [INFO] django.server: "OPTIONS /api/grade_code/ HTTP/1.1" 200 0
+2025-05-20 08:48:38,386 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1725
+2025-05-20 08:48:48,980 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 47867
+2025-05-20 08:48:49,196 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 47867
+2025-05-20 08:49:26,321 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-20 08:49:35,954 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 3851
+2025-05-20 20:18:17,060 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 21:29:10,370 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 21:29:25,600 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 53903
+2025-05-20 21:29:25,828 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 53903
+2025-05-20 22:48:36,827 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 22:48:39,796 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 22:52:40,512 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-20 22:52:48,949 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 1317
+2025-05-20 22:54:13,933 [INFO] django.server: "OPTIONS /api/run_code/ HTTP/1.1" 200 0
+2025-05-20 22:54:13,935 [INFO] executor.views: Code execution request received.
+2025-05-20 22:54:13,936 [INFO] executor.views: Language: python
+2025-05-20 22:54:13,936 [DEBUG] executor.views: Code preview:
+def recursive_sum(n):
+    
+    if n == 1:
+        return 1
+    
+    else:
+        return n + recursi...
+2025-05-20 22:54:13,941 [INFO] executor.views: Running command: python temp_codes\code_58ccae279c5e4336bf0438edc5922128.py
+2025-05-20 22:54:18,976 [ERROR] executor.views: Execution timed out.
+2025-05-20 22:54:18,977 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:54:18,980 [WARNING] django.request: Request Timeout: /api/run_code/
+2025-05-20 22:54:18,984 [WARNING] django.server: "POST /api/run_code/ HTTP/1.1" 408 44
+2025-05-20 22:54:19,306 [INFO] executor.views: Code execution request received.
+2025-05-20 22:54:19,307 [INFO] executor.views: Language: python
+2025-05-20 22:54:19,307 [DEBUG] executor.views: Code preview:
+def recursive_sum(n):
+    
+    if n == 1:
+        return 1
+    
+    else:
+        return n + recursi...
+2025-05-20 22:54:19,310 [INFO] executor.views: Running command: python temp_codes\code_db4b85f537704cf6bae526cdaabf4add.py
+2025-05-20 22:54:24,347 [ERROR] executor.views: Execution timed out.
+2025-05-20 22:54:24,348 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:54:24,351 [WARNING] django.request: Request Timeout: /api/run_code/
+2025-05-20 22:54:24,352 [WARNING] django.server: "POST /api/run_code/ HTTP/1.1" 408 44
+2025-05-20 22:55:13,898 [INFO] executor.views: Code execution request received.
+2025-05-20 22:55:13,898 [INFO] executor.views: Language: python
+2025-05-20 22:55:13,899 [DEBUG] executor.views: Code preview:
+def recursive_sum(n):
+    if n == 1:
+        return 1
+    else:
+        return n + recursive_sum(n -...
+2025-05-20 22:55:13,902 [INFO] executor.views: Running command: python temp_codes\code_5df14c1c488a460aad163b9e9a1b9d85.py
+2025-05-20 22:55:14,040 [INFO] executor.views: Execution successful.
+2025-05-20 22:55:14,040 [DEBUG] executor.views: Execution output:
+Sum from 1 to 5 is: 15
+
+2025-05-20 22:55:14,041 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:55:14,043 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 49
+2025-05-20 22:55:17,491 [INFO] django.server: "OPTIONS /api/grade_code/ HTTP/1.1" 200 0
+2025-05-20 22:55:20,542 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1489
+2025-05-20 22:56:02,711 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1628
+2025-05-20 22:56:04,555 [INFO] executor.views: Code execution request received.
+2025-05-20 22:56:04,555 [INFO] executor.views: Language: python
+2025-05-20 22:56:04,555 [DEBUG] executor.views: Code preview:
+def recursive_sum(n):
+    if n == 1:
+        return 1
+    else:
+        return n + recursive_sum(n -...
+2025-05-20 22:56:04,557 [INFO] executor.views: Running command: python temp_codes\code_d90194aeaf1644be985fd31ef605bccd.py
+2025-05-20 22:56:04,662 [INFO] executor.views: Execution successful.
+2025-05-20 22:56:04,663 [DEBUG] executor.views: Execution output:
+Sum from 1 to 5 is: 15
+
+2025-05-20 22:56:04,663 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:56:04,666 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 49
+2025-05-20 22:56:11,411 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1637
+2025-05-20 22:56:39,095 [INFO] executor.views: Code execution request received.
+2025-05-20 22:56:39,095 [INFO] executor.views: Language: cpp
+2025-05-20 22:56:39,095 [DEBUG] executor.views: Code preview:
+#include <iostream>
+using namespace std;
+
+int recursive_sum(int n) {
+    if (n == 1)
+        return ...
+2025-05-20 22:56:39,099 [INFO] executor.views: Compiling C++ code: g++ temp_codes\code_0157aa324c6541169aba25f15c9c8864.cpp -o temp_codes\f7bdeb2fcf6c4b519b716c880a5c1f28
+2025-05-20 22:56:45,063 [INFO] executor.views: Running command: temp_codes\f7bdeb2fcf6c4b519b716c880a5c1f28
+2025-05-20 22:56:46,282 [INFO] executor.views: Execution successful.
+2025-05-20 22:56:46,283 [DEBUG] executor.views: Execution output:
+Sum from 1 to 5 is: 15
+
+2025-05-20 22:56:46,283 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:56:46,287 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 49
+2025-05-20 22:56:51,344 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1721
+2025-05-20 22:57:46,203 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 22:57:50,348 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 22:57:57,734 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 22:57:59,502 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 22:58:08,533 [INFO] executor.views: Code execution request received.
+2025-05-20 22:58:08,534 [INFO] executor.views: Language: python
+2025-05-20 22:58:08,534 [DEBUG] executor.views: Code preview:
+print("Hello, World!")...
+2025-05-20 22:58:08,540 [INFO] executor.views: Running command: python temp_codes\code_7dac6dad45074856bb32514a7f81a419.py
+2025-05-20 22:58:08,656 [INFO] executor.views: Execution successful.
+2025-05-20 22:58:08,657 [DEBUG] executor.views: Execution output:
+Hello, World!
+
+2025-05-20 22:58:08,659 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:58:08,661 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 22:58:15,162 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1374
+2025-05-20 22:58:33,685 [INFO] executor.views: Code execution request received.
+2025-05-20 22:58:33,685 [INFO] executor.views: Language: cpp
+2025-05-20 22:58:33,686 [DEBUG] executor.views: Code preview:
+#include <iostream>
+using namespace std;
+
+int recursive_sum(int n) {
+    if (n == 1)
+        return ...
+2025-05-20 22:58:33,688 [INFO] executor.views: Compiling C++ code: g++ temp_codes\code_5552bd85e2a645479b8397837979fba0.cpp -o temp_codes\ea3fe5b409cd4048b4f8ff288e8f745a
+2025-05-20 22:58:34,575 [INFO] executor.views: Running command: temp_codes\ea3fe5b409cd4048b4f8ff288e8f745a
+2025-05-20 22:58:35,478 [INFO] executor.views: Execution successful.
+2025-05-20 22:58:35,479 [DEBUG] executor.views: Execution output:
+Sum from 1 to 5 is: 15
+
+2025-05-20 22:58:35,480 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 22:58:35,483 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 49
+2025-05-20 22:58:41,287 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1799
+2025-05-20 23:06:20,309 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:06:24,346 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:06:41,801 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:06:43,692 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:06:47,018 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:06:48,477 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:06:52,931 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:06:54,478 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:02,035 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:03,875 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:12,892 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:14,396 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:16,500 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:17,934 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:30,121 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:31,796 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:40,332 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:42,043 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:07:51,716 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:07:53,576 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:08:47,180 [INFO] executor.views: Code execution request received.
+2025-05-20 23:08:47,181 [INFO] executor.views: Language: python
+2025-05-20 23:08:47,181 [DEBUG] executor.views: Code preview:
+print("Hello, World!")...
+2025-05-20 23:08:47,183 [INFO] executor.views: Running command: python temp_codes\code_11210fb0e6d7441a87fc54f98b027e8a.py
+2025-05-20 23:08:47,288 [INFO] executor.views: Execution successful.
+2025-05-20 23:08:47,288 [DEBUG] executor.views: Execution output:
+Hello, World!
+
+2025-05-20 23:08:47,289 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:08:47,292 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 23:08:48,457 [ERROR] django.request: Internal Server Error: /api/grade_code/
+2025-05-20 23:08:48,459 [ERROR] django.server: "POST /api/grade_code/ HTTP/1.1" 500 83
+2025-05-20 23:09:15,146 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:09:23,784 [INFO] executor.views: Code execution request received.
+2025-05-20 23:09:23,785 [INFO] executor.views: Language: python
+2025-05-20 23:09:23,786 [DEBUG] executor.views: Code preview:
+print("Hello, World!")...
+2025-05-20 23:09:23,789 [INFO] executor.views: Running command: python temp_codes\code_b362730cb5ff40f68d132853380b79fd.py
+2025-05-20 23:09:23,934 [INFO] executor.views: Execution successful.
+2025-05-20 23:09:23,934 [DEBUG] executor.views: Execution output:
+Hello, World!
+
+2025-05-20 23:09:23,936 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:09:23,939 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 23:09:31,516 [INFO] executor.views: Code execution request received.
+2025-05-20 23:09:31,517 [INFO] executor.views: Language: python
+2025-05-20 23:09:31,518 [DEBUG] executor.views: Code preview:
+print("Hello World!")...
+2025-05-20 23:09:31,520 [INFO] executor.views: Running command: python temp_codes\code_1b0e455d74294a72a6a66a0ddaf9afa2.py
+2025-05-20 23:09:31,646 [INFO] executor.views: Execution successful.
+2025-05-20 23:09:31,648 [DEBUG] executor.views: Execution output:
+Hello World!
+
+2025-05-20 23:09:31,648 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:09:31,650 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 39
+2025-05-20 23:09:41,571 [INFO] executor.views: Code execution request received.
+2025-05-20 23:09:41,573 [INFO] executor.views: Language: python
+2025-05-20 23:09:41,574 [DEBUG] executor.views: Code preview:
+print("Helloo World!")...
+2025-05-20 23:09:41,578 [INFO] executor.views: Running command: python temp_codes\code_9783320be7b2429a96d533197edbdf81.py
+2025-05-20 23:09:41,716 [INFO] executor.views: Execution successful.
+2025-05-20 23:09:41,717 [DEBUG] executor.views: Execution output:
+Helloo World!
+
+2025-05-20 23:09:41,717 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:09:41,720 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 23:09:42,819 [ERROR] django.request: Internal Server Error: /api/grade_code/
+2025-05-20 23:09:42,820 [ERROR] django.server: "POST /api/grade_code/ HTTP/1.1" 500 83
+2025-05-20 23:10:10,058 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:10:24,920 [INFO] executor.views: Code execution request received.
+2025-05-20 23:10:24,921 [INFO] executor.views: Language: python
+2025-05-20 23:10:24,921 [DEBUG] executor.views: Code preview:
+print("Helloo World!")...
+2025-05-20 23:10:24,923 [INFO] executor.views: Running command: python temp_codes\code_619daa7a4c0445119575a917953eaede.py
+2025-05-20 23:10:25,032 [INFO] executor.views: Execution successful.
+2025-05-20 23:10:25,032 [DEBUG] executor.views: Execution output:
+Helloo World!
+
+2025-05-20 23:10:25,034 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:10:25,037 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 23:10:31,593 [ERROR] django.request: Internal Server Error: /api/grade_code/
+2025-05-20 23:10:31,594 [ERROR] django.server: "POST /api/grade_code/ HTTP/1.1" 500 83
+2025-05-20 23:11:40,289 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:11:42,329 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:13:23,228 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:13:24,978 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:13:32,328 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:13:34,154 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:13:44,217 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:13:45,605 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:14:03,003 [INFO] executor.views: Code execution request received.
+2025-05-20 23:14:03,004 [INFO] executor.views: Language: python
+2025-05-20 23:14:03,005 [DEBUG] executor.views: Code preview:
+print("Hello, World!")...
+2025-05-20 23:14:03,008 [INFO] executor.views: Running command: python temp_codes\code_cf2d658f98204de9a8a3633847927fd7.py
+2025-05-20 23:14:03,120 [INFO] executor.views: Execution successful.
+2025-05-20 23:14:03,120 [DEBUG] executor.views: Execution output:
+Hello, World!
+
+2025-05-20 23:14:03,122 [INFO] executor.views: Cleaning up temporary files...
+2025-05-20 23:14:03,124 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 40
+2025-05-20 23:14:09,659 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1275
+2025-05-20 23:31:38,770 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:31:43,131 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-20 23:32:58,856 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-20 23:33:00,601 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 03:20:35,276 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 03:20:48,246 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 56946
+2025-05-21 03:20:48,463 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 56946
+2025-05-21 03:45:40,891 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 03:45:43,366 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 03:46:19,166 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 03:46:21,111 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 03:47:21,249 [INFO] django.server: "GET /api/questions/123/ HTTP/1.1" 200 616
+2025-05-21 03:47:21,266 [INFO] django.server: "GET /api/questions/123/ HTTP/1.1" 200 616
+2025-05-21 03:47:35,842 [INFO] django.server: "OPTIONS /api/run_code/ HTTP/1.1" 200 0
+2025-05-21 03:47:35,846 [INFO] executor.views: Code execution request received.
+2025-05-21 03:47:35,847 [INFO] executor.views: Language: python
+2025-05-21 03:47:35,847 [DEBUG] executor.views: Code preview:
+def sum_natural_numbers(n):
+    # Base case: if n is 1, return 1
+    if n == 1:
+        return 1
+   ...
+2025-05-21 03:47:35,869 [INFO] executor.views: Running command: python temp_codes\code_2f04e48bc13e430bb4f2d6be2be99f5f.py
+2025-05-21 03:47:36,072 [INFO] executor.views: Execution successful.
+2025-05-21 03:47:36,073 [DEBUG] executor.views: Execution output:
+15
+
+2025-05-21 03:47:36,073 [INFO] executor.views: Cleaning up temporary files...
+2025-05-21 03:47:36,076 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 29
+2025-05-21 03:47:38,006 [INFO] django.server: "OPTIONS /api/grade_code/ HTTP/1.1" 200 0
+2025-05-21 03:47:43,351 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1447
+2025-05-21 04:08:39,239 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:08:43,646 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:08:59,194 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:09:01,517 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:09:24,368 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:09:26,304 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:12:32,581 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 56946
+2025-05-21 04:12:32,873 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 56946
+2025-05-21 04:12:44,604 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-21 04:12:59,958 [ERROR] django.request: Service Unavailable: /api/generate_questions/
+2025-05-21 04:12:59,959 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 503 80
+2025-05-21 04:14:24,400 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:14:26,745 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:15:45,299 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:15:47,178 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:16:22,139 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:16:24,099 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:16:36,594 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:16:38,417 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 04:16:45,733 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 04:16:47,636 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:04:49,761 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 2328
+2025-05-21 05:51:35,263 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 05:51:39,890 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:52:16,118 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 05:52:18,297 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:52:38,341 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 05:52:40,281 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:52:54,966 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 05:52:57,100 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:53:04,888 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 05:53:06,761 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 05:54:16,250 [ERROR] django.request: Service Unavailable: /api/generate_questions/
+2025-05-21 05:54:16,251 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 503 80
+2025-05-21 08:55:45,097 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 08:56:11,137 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 61268
+2025-05-21 08:56:11,500 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 61268
+2025-05-21 09:14:04,131 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:14:05,221 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:14:09,415 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:14:10,441 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:14:52,947 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:14:54,002 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:14:59,132 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:00,127 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:06,956 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:07,842 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:18,247 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:19,203 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:23,259 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:24,188 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:26,769 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:27,412 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:32,531 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:33,446 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:37,187 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:38,405 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:42,252 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:43,339 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:15:47,262 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:15:48,318 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:04,331 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:05,184 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:09,027 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:09,917 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:21,365 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:22,368 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:27,258 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:28,270 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:35,562 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:38,122 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:46,039 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:47,348 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:52,190 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:53,054 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:16:54,588 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:16:55,256 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:17:04,468 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:17:05,447 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:17:10,516 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:17:11,500 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:17:16,267 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:17:17,160 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:17:23,034 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:17:24,055 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:18:49,493 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-21 09:18:49,691 [ERROR] django.request: Internal Server Error: /api/generate_questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\executor\views.py", line 327, in generate_questions
+    content = generate_with_gemini(genai.GenerativeModel("gemini-1.5-flash"),prompt, retries=3)
+                                                                                     ^^^
+NameError: name 'ret' is not defined
+2025-05-21 09:18:49,694 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 500 104222
+2025-05-21 09:19:40,420 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 09:19:41,356 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 09:19:57,386 [DEBUG] executor.views: Attempt 1: Sending prompt to Gemini.
+2025-05-21 09:20:06,391 [DEBUG] executor.views: Gemini response: ```json
+[
+  {
+    "title": "Diamond Problem with Multiple Inheritance and Method Overriding",
+    "description": "Design a scenario involving multiple inheritance where a class inherits from two class...
+2025-05-21 09:20:06,595 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 3846
+2025-05-21 10:47:45,835 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 10:47:54,785 [WARNING] django.request: Not Found: /
+2025-05-21 10:47:54,787 [WARNING] django.server: "GET / HTTP/1.1" 404 2305
+2025-05-21 10:47:57,494 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-21 10:47:57,495 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-21 10:47:59,707 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2025-05-21 10:48:00,068 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 11637
+2025-05-21 10:48:00,098 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+2025-05-21 10:48:00,103 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+2025-05-21 10:48:00,143 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-05-21 10:48:00,151 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-05-21 10:48:00,153 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-05-21 10:48:00,159 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+2025-05-21 10:48:00,202 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-05-21 10:48:00,234 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-05-21 10:48:00,234 [INFO] django.server: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2025-05-21 10:48:00,236 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-05-21 10:48:17,676 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 68754
+2025-05-21 10:48:17,738 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-05-21 10:48:17,763 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-05-21 10:48:17,798 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-05-21 10:48:17,802 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+2025-05-21 10:48:17,803 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-05-21 10:48:17,838 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 10:48:17,847 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-05-21 10:48:17,852 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-05-21 10:48:17,873 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-05-21 10:48:17,900 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-05-21 10:48:17,957 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-05-21 10:48:18,058 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-05-21 10:48:18,127 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-05-21 10:48:45,670 [INFO] django.server: "GET /admin/executor/question/105/change/ HTTP/1.1" 200 20188
+2025-05-21 10:48:45,705 [INFO] django.server: "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+2025-05-21 10:48:45,719 [INFO] django.server: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+2025-05-21 10:48:45,722 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 10:48:45,771 [INFO] django.server: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-05-21 10:48:45,820 [INFO] django.server: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-05-21 10:59:29,832 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 68754
+2025-05-21 10:59:30,113 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-21 10:59:30,113 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-21 10:59:43,617 [INFO] django.server: "GET /admin/executor/question/112/change/ HTTP/1.1" 200 20149
+2025-05-21 10:59:43,669 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 11:02:58,410 [INFO] django.server: "GET /admin/executor/company/ HTTP/1.1" 200 19682
+2025-05-21 11:02:58,450 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 11:03:10,666 [INFO] django.server: "GET /admin/executor/topic/ HTTP/1.1" 200 12890
+2025-05-21 11:03:10,706 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 11:03:13,186 [INFO] django.server: "GET /admin/executor/company/ HTTP/1.1" 200 19682
+2025-05-21 11:03:13,224 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 11:04:10,627 [INFO] django.server: "GET /admin/auth/user/ HTTP/1.1" 200 13054
+2025-05-21 11:04:10,667 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-21 11:04:10,695 [INFO] django.server: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-05-21 11:04:10,750 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-05-21 11:04:10,754 [INFO] django.server: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2025-05-21 19:58:15,108 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:33:29,434 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:33:31,621 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:34:32,750 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:34:34,793 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:35:10,110 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:35:11,970 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:37:21,537 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:37:23,540 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:38:22,515 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 67660
+2025-05-21 20:38:22,807 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 67660
+2025-05-21 20:38:34,489 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-21 20:38:34,931 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-21 20:38:43,613 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Count Frequency of Words",
+    "description": "Given a string, write a function that uses a hash map to count the frequency of each word in the string.  The function should...
+2025-05-21 20:38:44,009 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 2221
+2025-05-21 20:40:44,798 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:40:48,775 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:51:28,155 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:51:30,079 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:52:10,947 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-21 20:52:12,948 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-21 20:56:35,543 [INFO] django.server: "OPTIONS /api/run_code/ HTTP/1.1" 200 0
+2025-05-21 20:56:35,546 [INFO] executor.views: Code execution request received.
+2025-05-21 20:56:35,547 [INFO] executor.views: Language: python
+2025-05-21 20:56:35,548 [DEBUG] executor.views: Code preview:
+def two_sum(nums, target):
+    # Create a dictionary to store value -> index
+    num_to_index = {}
+
+...
+2025-05-21 20:56:35,551 [INFO] executor.views: Running command: python temp_codes\code_5101ac8aeedc45f6a54f1c568d842b2d.py
+2025-05-21 20:56:35,760 [INFO] executor.views: Execution successful.
+2025-05-21 20:56:35,761 [DEBUG] executor.views: Execution output:
+[0, 1]
+
+2025-05-21 20:56:35,763 [INFO] executor.views: Cleaning up temporary files...
+2025-05-21 20:56:35,767 [INFO] django.server: "POST /api/run_code/ HTTP/1.1" 200 33
+2025-05-21 20:56:37,199 [INFO] django.server: "OPTIONS /api/grade_code/ HTTP/1.1" 200 0
+2025-05-21 20:56:37,263 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-21 20:56:42,559 [DEBUG] executor.views: Model response: ```json
+{
+  "code_compiles": {
+    "score": 2,
+    "feedback": "The code compiles and runs without any errors."
+  },
+  "logic_correctness": {
+    "score": 3,
+    "feedback": "The logic correctly imple...
+2025-05-21 20:56:42,599 [INFO] django.server: "POST /api/grade_code/ HTTP/1.1" 200 1734
+2025-05-22 07:49:52,091 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 07:50:42,225 [WARNING] django.request: Not Found: /
+2025-05-22 07:50:42,230 [WARNING] django.server: "GET / HTTP/1.1" 404 2305
+2025-05-22 07:50:43,956 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-22 07:50:43,958 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-22 07:50:50,088 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 11637
+2025-05-22 07:50:50,105 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2025-05-22 07:50:50,105 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2025-05-22 07:50:50,108 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2025-05-22 07:50:50,108 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2025-05-22 07:50:50,109 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2025-05-22 07:50:50,110 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2025-05-22 07:50:50,135 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2025-05-22 07:50:50,140 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2025-05-22 07:50:50,140 [INFO] django.server: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+2025-05-22 07:50:50,140 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2025-05-22 07:50:54,084 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 71984
+2025-05-22 07:50:54,115 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2025-05-22 07:50:54,115 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,115 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,116 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,118 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,118 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,122 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,122 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,124 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,129 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 07:50:54,260 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+2025-05-22 07:50:54,272 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2025-05-22 07:50:54,284 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2025-05-22 07:50:58,271 [INFO] django.server: "GET /admin/executor/question/108/change/ HTTP/1.1" 200 20291
+2025-05-22 07:50:58,289 [INFO] django.server: "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+2025-05-22 07:50:58,289 [INFO] django.server: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2025-05-22 07:50:58,293 [INFO] django.server: "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2025-05-22 07:50:58,293 [INFO] django.server: "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+2025-05-22 07:50:58,294 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 07:51:16,143 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 71984
+2025-05-22 07:51:19,572 [INFO] django.server: "GET /admin/executor/question/71/change/ HTTP/1.1" 200 20149
+2025-05-22 07:51:19,595 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 07:51:23,739 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 71984
+2025-05-22 07:52:05,778 [INFO] django.server: "GET /admin/executor/question/118/change/ HTTP/1.1" 200 20584
+2025-05-22 07:52:05,797 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:04:06,960 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\models.py changed, reloading.
+2025-05-22 09:04:08,212 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:04:14,905 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\models.py changed, reloading.
+2025-05-22 09:04:15,712 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:05:31,762 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:06:43,631 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:06:44,416 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:06:49,155 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:06:49,908 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:07:57,319 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:07:58,114 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:08:03,913 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:08:04,531 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:08:47,781 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:08:48,596 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:08:52,272 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:08:53,173 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:09:16,562 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:09:17,374 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:09:18,922 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:09:19,507 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:09:34,026 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:09:34,857 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:09:41,728 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:09:42,577 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:11:39,450 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\admin.py changed, reloading.
+2025-05-22 09:11:40,302 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:12:53,441 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\serializers.py changed, reloading.
+2025-05-22 09:12:54,345 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:14:29,802 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:14:29,951 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-22 09:14:29,952 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-22 09:14:31,796 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:14:31,853 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:14:36,068 [ERROR] django.request: Internal Server Error: /admin/executor/question/141/change/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 840, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1987, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1840, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1878, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 842, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question. Check fields/fieldsets/exclude attributes of class QuestionAdmin.
+2025-05-22 09:14:36,074 [ERROR] django.server: "GET /admin/executor/question/141/change/ HTTP/1.1" 500 153716
+2025-05-22 09:14:57,470 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:15:01,090 [WARNING] django.request: Not Found: /
+2025-05-22 09:15:01,092 [WARNING] django.server: "GET / HTTP/1.1" 404 2305
+2025-05-22 09:15:07,049 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 11637
+2025-05-22 09:15:09,576 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:15:09,600 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:15:11,583 [ERROR] django.request: Internal Server Error: /admin/executor/question/142/change/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 840, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1987, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1840, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1878, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 842, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question. Check fields/fieldsets/exclude attributes of class QuestionAdmin.
+2025-05-22 09:15:11,589 [ERROR] django.server: "GET /admin/executor/question/142/change/ HTTP/1.1" 500 153653
+2025-05-22 09:15:13,806 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:15:16,238 [ERROR] django.request: Internal Server Error: /admin/executor/question/81/change/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 840, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1987, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1840, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1878, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\contrib\admin\options.py", line 842, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (max_score) specified for Question. Check fields/fieldsets/exclude attributes of class QuestionAdmin.
+2025-05-22 09:15:16,240 [ERROR] django.server: "GET /admin/executor/question/81/change/ HTTP/1.1" 500 153670
+2025-05-22 09:15:19,923 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:16:21,494 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\admin.py changed, reloading.
+2025-05-22 09:16:22,431 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:16:44,217 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 48235
+2025-05-22 09:16:44,233 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:16:46,730 [INFO] django.server: "GET /admin/executor/question/72/change/ HTTP/1.1" 200 24192
+2025-05-22 09:16:46,756 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:16:46,782 [INFO] django.server: "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+2025-05-22 09:16:46,831 [INFO] django.server: "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+2025-05-22 09:17:55,616 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:17:55,621 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 159106
+2025-05-22 09:17:55,660 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:17:55,663 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 159106
+2025-05-22 09:18:13,679 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-22 09:18:13,793 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-22 09:18:25,840 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Find the Maximum Element in an Array",
+    "description": "Given an array of integers, find the maximum element in the array.",
+    "companies_asked": ["Google", "Amazon", ...
+2025-05-22 09:18:25,892 [ERROR] django.request: Internal Server Error: /api/generate_questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\executor\views.py", line 269, in generate_questions
+    sample_input = str(test_cases[0]['input']) if test_cases else ""
+                       ~~~~~~~~~~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2025-05-22 09:18:25,895 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 500 120555
+2025-05-22 09:18:28,077 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-22 09:18:40,135 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Find the Maximum Element in an Array",
+    "description": "Given an integer array `nums`, find the maximum element in the array.",
+    "companies_asked": ["Google", "Amazon...
+2025-05-22 09:18:40,316 [INFO] django.server: - Broken pipe from ('127.0.0.1', 65019)
+2025-05-22 09:18:42,770 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:18:42,772 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 159106
+2025-05-22 09:18:42,815 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:18:42,817 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 159106
+2025-05-22 09:24:11,773 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\urls.py changed, reloading.
+2025-05-22 09:24:14,764 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:24:31,696 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\backend\urls.py changed, reloading.
+2025-05-22 09:24:32,496 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:25:06,346 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 11637
+2025-05-22 09:25:06,347 [INFO] django.server: - Broken pipe from ('127.0.0.1', 61718)
+2025-05-22 09:25:25,213 [INFO] django.server: "GET /api/questions HTTP/1.1" 301 0
+2025-05-22 09:25:25,265 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:25:25,271 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 159992
+2025-05-22 09:25:26,107 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-22 09:25:26,109 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-22 09:26:29,714 [INFO] django.server: "GET /api/questions HTTP/1.1" 301 0
+2025-05-22 09:26:29,776 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 716, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 525, in to_representation
+    for field in fields:
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 386, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `max_score` is not valid for model `Question` in `executor.serializers.QuestionSerializer`.
+2025-05-22 09:26:29,779 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 157921
+2025-05-22 09:29:48,785 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\serializers.py changed, reloading.
+2025-05-22 09:29:50,006 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:30:26,994 [INFO] django.server: "GET /admin/executor/question/72/change/ HTTP/1.1" 200 24192
+2025-05-22 09:30:27,024 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:30:35,392 [ERROR] django.request: Internal Server Error: /api/questions/
+Traceback (most recent call last):
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\renderers.py", line 731, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\renderers.py", line 709, in get_context
+    'filter_form': self.get_filter_form(data, view, request),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\rest_framework\renderers.py", line 641, in get_filter_form
+    html = backend().to_html(request, queryset, view)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django_filters\rest_framework\backends.py", line 79, in to_html
+    template = loader.get_template(self.template)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\my_coding_platform\backend\env\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: django_filters/rest_framework/form.html
+2025-05-22 09:30:35,397 [ERROR] django.server: "GET /api/questions/ HTTP/1.1" 500 125456
+2025-05-22 09:30:41,092 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 50370
+2025-05-22 09:30:43,366 [INFO] django.server: "GET /admin/executor/question/79/change/ HTTP/1.1" 200 26826
+2025-05-22 09:30:43,384 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:30:45,639 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 50370
+2025-05-22 09:30:46,313 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-22 09:30:46,313 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-22 09:30:54,226 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 79235
+2025-05-22 09:30:54,365 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 79235
+2025-05-22 09:31:09,663 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-22 09:31:25,925 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Longest Consecutive Sequence",
+    "description": "Given an unsorted array of integers, find the length of the longest consecutive elements sequence.  Your algorithm should...
+2025-05-22 09:31:26,028 [ERROR] django.request: Internal Server Error: /api/generate_questions/
+2025-05-22 09:31:26,028 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 500 140
+2025-05-22 09:46:07,591 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:46:11,718 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:46:44,393 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-22 09:46:55,809 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Two Sum III - Data structure design",
+    "description": "Design and implement a TwoSum class. It should support the following operations: add and find.",
+    "companies_as...
+2025-05-22 09:46:56,208 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 1624
+2025-05-22 09:47:23,241 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52403
+2025-05-22 09:47:23,290 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:47:29,175 [INFO] django.server: "GET /admin/executor/question/150/change/ HTTP/1.1" 200 26928
+2025-05-22 09:47:29,221 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:50:35,528 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:50:39,450 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:50:55,575 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-22 09:51:04,635 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Count Frequency of Words",
+    "description": "Given a list of words, count the frequency of each word using a hash map.",
+    "companies_asked": ["Amazon", "Google"],
+    ...
+2025-05-22 09:51:04,959 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 1427
+2025-05-22 09:51:14,807 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52820
+2025-05-22 09:51:16,104 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52820
+2025-05-22 09:51:16,148 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:51:17,646 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52820
+2025-05-22 09:51:17,685 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:51:22,129 [INFO] django.server: "GET /admin/executor/question/154/change/ HTTP/1.1" 200 26751
+2025-05-22 09:51:22,181 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 09:53:10,092 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:53:14,116 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:53:28,531 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:53:30,419 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:53:41,574 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:53:43,434 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:54:13,574 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:54:15,437 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:54:24,050 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 09:54:25,753 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 09:54:55,176 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52820
+2025-05-22 09:54:55,310 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-22 09:54:55,312 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-22 09:54:57,875 [INFO] django.server: "GET /admin/executor/question/152/change/ HTTP/1.1" 200 26861
+2025-05-22 09:54:57,923 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-22 10:11:33,567 [INFO] django.server: "GET /api/questions HTTP/1.1" 301 0
+2025-05-22 10:11:34,285 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 88217
+2025-05-22 20:23:53,826 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:19:05,780 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:32:40,047 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:41:23,803 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 22:41:26,176 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:41:28,574 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 22:41:30,271 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:41:43,694 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 22:41:45,710 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:42:09,923 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 22:42:11,889 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-22 22:42:17,498 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-22 22:42:19,112 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:23:38,044 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:24:06,281 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 88217
+2025-05-23 08:24:06,778 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 88217
+2025-05-23 08:29:57,727 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-23 08:29:59,975 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:32:06,835 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-23 08:32:08,732 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:32:14,311 [INFO] django.utils.autoreload: D:\my_coding_platform\backend\executor\views.py changed, reloading.
+2025-05-23 08:32:15,923 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:32:25,047 [INFO] django.server: "GET /api/questions/47/ HTTP/1.1" 200 753
+2025-05-23 08:32:25,063 [INFO] django.server: "GET /api/questions/47/ HTTP/1.1" 200 753
+2025-05-23 08:32:29,083 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 88217
+2025-05-23 08:32:29,453 [INFO] django.server: "GET /api/questions/ HTTP/1.1" 200 88217
+2025-05-23 08:32:42,570 [INFO] django.server: "OPTIONS /api/generate_questions/ HTTP/1.1" 200 0
+2025-05-23 08:32:42,942 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-23 08:32:54,341 [DEBUG] executor.views: Model response: ```json
+[
+  {
+    "title": "Longest Palindromic Substring",
+    "description": "Given a string s, find the longest palindromic substring in s.",
+    "companies_asked": ["Amazon", "Google", "Microsoft"...
+2025-05-23 08:32:54,858 [ERROR] django.request: Internal Server Error: /api/generate_questions/
+2025-05-23 08:32:54,859 [ERROR] django.server: "POST /api/generate_questions/ HTTP/1.1" 500 45
+2025-05-23 08:36:19,420 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-05-23 08:36:51,945 [DEBUG] executor.views: Attempt 1: Sending prompt to GenerativeModel.
+2025-05-23 08:37:01,851 [DEBUG] executor.views: Model response: [
+  {
+    "title": "Longest Palindromic Substring with Wildcard",
+    "description": "Given a string containing lowercase letters and a wildcard character '*', find the length of the longest palindrom...
+2025-05-23 08:37:02,321 [INFO] django.server: "POST /api/generate_questions/ HTTP/1.1" 201 2047
+2025-05-23 09:53:49,863 [WARNING] django.request: Not Found: /
+2025-05-23 09:53:49,867 [WARNING] django.server: "GET / HTTP/1.1" 404 2305
+2025-05-23 09:53:50,856 [WARNING] django.request: Not Found: /favicon.ico
+2025-05-23 09:53:50,856 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 2356
+2025-05-23 09:54:05,472 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2025-05-23 09:54:05,658 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 11637
+2025-05-23 09:54:05,688 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+2025-05-23 09:54:05,697 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+2025-05-23 09:54:05,702 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-05-23 09:54:05,702 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-05-23 09:54:05,704 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-05-23 09:54:05,716 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+2025-05-23 09:54:05,726 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-05-23 09:54:05,744 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-05-23 09:54:05,746 [INFO] django.server: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2025-05-23 09:54:05,746 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-05-23 09:54:15,888 [INFO] django.server: "GET /admin/executor/question/ HTTP/1.1" 200 52950
+2025-05-23 09:54:15,920 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-05-23 09:54:15,948 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-05-23 09:54:15,960 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-05-23 09:54:15,961 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-05-23 09:54:15,966 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-05-23 09:54:15,970 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+2025-05-23 09:54:15,995 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-05-23 09:54:15,995 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-05-23 09:54:15,998 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-05-23 09:54:16,016 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-05-23 09:54:16,054 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-05-23 09:54:16,097 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-05-23 09:54:16,131 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331

@@ -22,7 +22,7 @@ class QuestionSerializer(serializers.ModelSerializer):
     test_cases = TestCaseSerializer(many=True, read_only=True)
     topics = TopicSerializer(many=True, read_only=True)
     companies = CompanySerializer(many=True, read_only=True)
-    difficulty_display = serializers.CharField(source='get_difficulty_display', read_only=True)  # ✅ Add this line
+    difficulty_display = serializers.CharField(source='get_difficulty_display', read_only=True)
 
     class Meta:
         model = Question
@@ -33,14 +33,17 @@ class QuestionSerializer(serializers.ModelSerializer):
             'sample_input',
             'sample_output',
             'explanation',
-            'max_score',
+            'constraints',           # ✅ Add this
+            'testcase_description',  # ✅ Add this
+            
             'difficulty',
-            'difficulty_display',  # ✅ Include it in the output
+            'difficulty_display',
             'topics',
             'companies',
             'year_asked',
             'test_cases',
         ]
+
 
 class GenerateQuestionInputSerializer(serializers.Serializer):
     topic = serializers.CharField()
